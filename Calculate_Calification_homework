@@ -1,0 +1,19 @@
+def calculate_calification():
+    try:
+        x = float(input('insert_puntuation '))  
+        
+        if x > 0.9 and x <= 1.0:
+            print('Excellent')
+        if x > 0.8 and x <= 0.9:
+            print('Notable')
+        elif x > 0.7 and x <= 0.8:
+            print('Good')
+        elif x > 0.6 and x <= 0.7:
+            print('Enough')
+        elif x >= 0.0 and x <= 0.6:
+            print('Insufficient')
+
+    except Exception as e:
+        print('puntuation is incorrect')
+
+calculate_calification()
